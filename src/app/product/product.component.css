@@ -1,9 +1,10 @@
 .item{
-  margin-right: 10px;
+  margin-right: 1em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   font-weight: 500;
+  margin-top: 2em;
 }
 
 .item-photo{
@@ -13,7 +14,7 @@
 .item button{
   color: var(--rose-900);
   background-color: white;
-  border:1px solid var(--red);
+  border:1px solid var(--rose-400);
   border-radius: 30px;
   padding: 10px 20px;
   font-size: 12px;
@@ -21,15 +22,19 @@
   z-index: 1;
   top:88%;
   left:20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .item-img{
   border-radius: 8px;
 }
 
-.item button i{
+.item button img{
   padding-right: 5px;
-  color: var(--red);
+  width: 1.5em;
+  filter: brightness(0) saturate(100%) invert(36%) sepia(51%) saturate(2000%) hue-rotate(355deg) brightness(97%) contrast(92%);
 }
 
 .item-resume{
