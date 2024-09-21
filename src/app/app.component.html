@@ -1,4 +1,11 @@
-<h1 class="title">Desserts</h1>
-<app-product></app-product>
-<app-cart class="cart"></app-cart>
+
+<div class="main">
+  <div>
+    <h1 class="title">Desserts</h1>
+    <div class="product-items">
+      <app-product *ngFor="let product of productList" [product]="product" class="product-item"></app-product>
+    </div>
+  </div>
+  <app-cart class="cart"></app-cart>
+</div>
 <router-outlet />
