@@ -1,5 +1,8 @@
 # ProductListWithCartMain
 
+Para acessar o projeto pelo netlify entrar nesse [link](https://ubiquitous-mermaid-535371.netlify.app/).
+Até o presente momento foi ajustado de acordo com o design [desktop-design-empty](product-list-with-cart-main/design/desktop-design-empty.jpg).
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
 
 ## Development server
