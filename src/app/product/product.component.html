@@ -1,12 +1,12 @@
 
 <article class="item">
   <div class="item-photo">
-    <img class="item-img" src="image-waffle-desktop.jpg" alt="waffle with berries" width="220px">
+    <img class="item-img" [src]="product.image.desktop" alt="waffle with berries" width="220px">
     <button><img src="icon-shopping-and-commerce.png">Add to Cart</button>
   </div>
   <div class="item-resume">
-    <p class="item-name">Waffle</p>
-    <p class="item-description">Waffle with Berries</p>
-    <p class="item-price">$6.50</p>
+    <p class="item-name">{{product.category}}</p>
+    <p class="item-description">{{product.name}}</p>
+    <p class="item-price">${{product.price.toFixed(2)}}</p>
   </div>
 </article>
