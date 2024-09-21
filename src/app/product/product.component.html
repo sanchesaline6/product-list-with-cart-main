@@ -1,7 +1,7 @@
 
 <article class="item">
   <div class="item-photo">
-    <img class="item-img" [src]="product.image.desktop" alt="waffle with berries" width="220px">
+    <img class="item-img" [src]="product.image.desktop" [alt]="product.image.desktop.slice(6,-12).replace('-',' ')" width="220px">
     <button><img src="icon-shopping-and-commerce.png">Add to Cart</button>
   </div>
   <div class="item-resume">
