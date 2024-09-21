@@ -24,6 +24,22 @@ body{
 }
 
 .main {
-  margin: 4em;
+  margin: 4vw;
   background-color: var(--rose-100);
+}
+
+/* Tablet breakpoint (optional, for a smoother transition) */
+@media screen and (min-width: 600px) {
+  .product-items {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium-sized screens */
+  }
+}
+
+/* Desktop breakpoint */
+@media screen and (min-width: 1440px) {
+  .product-items {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for desktop */
+    max-width: 1440px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the grid if the screen is wider than 1440px */
+  }
 }
