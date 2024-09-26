@@ -5,11 +5,12 @@ import { CartComponent } from "./cart/cart.component";
 import { ProductService } from './product.service';
 import { Product } from './product';
 import { CommonModule } from '@angular/common';
+import { CartItemComponent } from './cart-item/cart-item.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ProductComponent, CartComponent, CommonModule],
+  imports: [RouterOutlet, ProductComponent, CartComponent, CommonModule, CartItemComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
