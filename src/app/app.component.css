@@ -7,6 +7,8 @@
 .main{
   display: flex;
   flex-direction: row;
+  margin: auto;
+  justify-content: center;
 }
 .product-items{
   max-width: fit-content;
