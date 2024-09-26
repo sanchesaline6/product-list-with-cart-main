@@ -1,17 +1,4 @@
-.item{
-  margin-right: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-weight: 500;
-  margin-top: 2em;
-}
-
-.item-photo{
-  position: relative;
-}
-
-.item button{
+.cart-controls button{
   color: var(--rose-900);
   background-color: white;
   border:1px solid var(--rose-400);
@@ -25,6 +12,54 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
+}
+
+.quantity-control{
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  background-color: var(--red);
+  border-radius: 30px;
+  position: absolute;
+  z-index: 1;
+  top:88%;
+  left:20%;
+  padding: 5px 20px;
+  color: white;
+}
+
+.quantity-btn button{
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.quantity-control button .increment{
+  font-size: 1.5em;
+  color: white;
+  background-color: var(--red);
+  padding-left: 1em;
+  cursor: pointer;
+}
+.quantity-control button .decrement{
+  font-size: 1.5em;
+  color: white;
+  background-color: var(--red);
+  padding-right: 1em;
+  cursor: pointer;
+}
+
+.item{
+  margin-right: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 500;
+  margin-top: 2em;
+}
+
+.item-photo{
+  position: relative;
 }
 
 .item-img{
