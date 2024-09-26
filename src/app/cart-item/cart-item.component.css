@@ -1,0 +1,52 @@
+h3 {
+  color: var(--rose-900);
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.item-details {
+  display:flex;
+}
+.item-details .delete-item {
+  border-radius: 50%;
+  border: 1px solid var(--rose-400);
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  margin-left:8em;
+  flex-direction: column;
+  padding: 0.05em;
+  cursor: pointer;
+}
+
+.item-details .delete-item img{
+  width: 10px;
+  height: 10px;
+  display: inline;
+
+}
+
+.quantity{
+  color: var(--red);
+  font-weight: 600;
+  padding-right: 1em;
+}
+
+.item-price{
+  color: var(--rose-400);
+  padding-right: 1em;
+}
+
+.total-price{
+  color: var(--rose-400);
+  font-weight: 600;
+}
+
+hr{
+  border: 0;
+  height: 1px;
+  background-color: var(--rose-100);
+  margin-top: 1em;
+}
