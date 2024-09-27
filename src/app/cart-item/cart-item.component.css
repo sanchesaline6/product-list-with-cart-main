@@ -2,10 +2,12 @@ h3 {
   color: var(--rose-900);
   font-weight: 600;
   font-size: 1em;
+  margin-bottom: 0.5em;
 }
 
 .item-details {
   display:flex;
+  justify-content: space-between;
 }
 .item-details .delete-item {
   border-radius: 50%;
