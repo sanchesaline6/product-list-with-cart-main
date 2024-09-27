@@ -1,6 +1,13 @@
 <article class="cart">
   <h3>Your Cart <span>(0)</span></h3>
-  <img src="illustration-empty-cart.svg" alt="">
-  <p>Your added items will appear here</p>
+  <div id="empty-cart">
+    <img src="illustration-empty-cart.svg" alt="Empty cart">
+    <p id="cart-message">Your added items will appear here</p>
+  </div>
   <app-cart-item></app-cart-item>
+  <div id="cart-total">
+    <p>Order Total</p> <span>$46.50</span>
+  </div>
+  <p class="carbon-message"><img src="icon-carbon-neutral.svg" alt="Carbon neutral icon">This is a <span>carbon neutral</span> delivery</p>
+  <button class="confirm-order">Confirm Order</button>
 </article>
