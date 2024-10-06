@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Product } from '../product';
 import { CommonModule } from '@angular/common';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-product',
@@ -16,6 +17,8 @@ export class ProductComponent {
   isAddedToCart: boolean = false;
   isButtonDisabled: boolean = false;
 
+  constructor(private cartService: CartService){ }
+
   incrementQuantity() {
     if(this.quantity < 11){
       this.quantity++;
@@ -30,8 +33,9 @@ export class ProductComponent {
     }
   }
 
-  addToCart() {
+  addToCart(): void {
     this.isAddedToCart = true;
     this.quantity = 1;
+    this.cartService.addToCart(this.product, this.quantity);
   }
 }
